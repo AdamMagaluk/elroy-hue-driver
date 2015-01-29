@@ -33,6 +33,8 @@ To do this:
 
 ```
 var bulbQuery = server.where({type: 'huebulb'});
+
+var bulbQuery = server.where({type: 'huebulb', name: 'Hue Bulb ' + YOUR_HUE_BULB_NAME });
 ```
 
 ## Changing Bulb Color
