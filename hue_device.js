@@ -11,7 +11,7 @@ var HueDevice = module.exports = function(hue) {
 util.inherits(HueDevice, Device);
 
 HueDevice.prototype._init = function(config) {
-  var controls = ['toggel', 'blink', 'color', 'brightness'];
+  var controls = ['toggle', 'blink', 'color', 'brightness'];
 
   config
     .when('on', { allow: controls.concat(['turn-off', 'color-loop']) })
